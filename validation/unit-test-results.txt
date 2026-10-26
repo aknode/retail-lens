@@ -1,0 +1,17 @@
+test_all_queries_execute (test_analytics.AnalyticsTests.test_all_queries_execute) ... ok
+test_bound_country_parameter (test_analytics.AnalyticsTests.test_bound_country_parameter) ... ok
+test_cohorts (test_analytics.AnalyticsTests.test_cohorts) ... ok
+test_country_filter (test_analytics.AnalyticsTests.test_country_filter) ... ok
+test_date_validation (test_analytics.AnalyticsTests.test_date_validation) ... ok
+test_duplicate_and_anonymous (test_analytics.AnalyticsTests.test_duplicate_and_anonymous) ... ok
+test_financial_reconciliation (test_analytics.AnalyticsTests.test_financial_reconciliation) ... ok
+test_idempotent_rebuild (test_analytics.AnalyticsTests.test_idempotent_rebuild) ... ok
+test_inconsistent_invoice_rejected (test_analytics.AnalyticsTests.test_inconsistent_invoice_rejected) ... ok
+test_invalid_prices_quarantined (test_analytics.AnalyticsTests.test_invalid_prices_quarantined) ... ok
+test_line_timestamps_preserved (test_analytics.AnalyticsTests.test_line_timestamps_preserved) ... ok
+test_repeat_customer (test_analytics.AnalyticsTests.test_repeat_customer) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.462s
+
+OK

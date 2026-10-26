@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Retail Lens</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <header>
+      <strong>Retail Lens</strong>
+      <nav>
+        <a href="/docs">API documentation</a><a href="/health">System health</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Commerce analytics</div>
+          <h1>From transactions to better decisions.</h1>
+        </div>
+        <span class="tag">Portfolio application · v1.0</span>
+      </section>
+      <div id="error" class="error" role="alert"></div>
+      <p class="muted">
+        A normalized SQL warehouse for UCI Online Retail. Historical data, GBP,
+        December 2010–December 2011. The final month is incomplete.
+      </p>
+      <section class="card">
+        <form id="filters" class="actions">
+          <div>
+            <label for="start">From</label
+            ><input id="start" type="date" required />
+          </div>
+          <div>
+            <label for="end">To</label><input id="end" type="date" required />
+          </div>
+          <div>
+            <label for="country">Country</label
+            ><select id="country">
+              <option>All</option>
+            </select>
+          </div>
+          <button>Apply filters</button>
+        </form>
+      </section>
+      <div id="metrics" class="grid"></div>
+      <section class="split">
+        <div class="card">
+          <h2>Revenue over time</h2>
+          <div id="trend"></div>
+          <p class="muted">
+            Net revenue = positive sales − cancellation and return value. This
+            is transaction revenue before any unavailable tax, shipping, or cost
+            adjustments.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Customer repeat purchases</h2>
+          <div id="repeat"></div>
+          <h3>Data quality</h3>
+          <div id="quality"></div>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Explore the warehouse</h2>
+        <div id="tabs" class="tabs"></div>
+        <p id="report-note" class="muted"></p>
+        <div class="actions">
+          <a id="export" class="button">Export CSV</a
+          ><button id="show-sql" class="secondary">View SQL</button>
+        </div>
+        <pre id="sql" hidden></pre>
+        <div id="report"></div>
+      </section>
+      <footer>
+        Built with Python · FastAPI · Reproducible data and evaluation included.
+        Local single-user application.
+      </footer>
+    </main>
+    <script src="/static/common.js"></script>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
