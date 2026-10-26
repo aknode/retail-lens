@@ -1,0 +1,30 @@
+{
+  "source_rows": 541909,
+  "duplicate_rows_removed": 5268,
+  "invalid_rows_removed": 2512,
+  "loaded_rows": 534129,
+  "invoices": 23796,
+  "customers": 4371,
+  "products": 3938,
+  "invoices_with_multiple_timestamps": 43,
+  "anonymous_line_rows": 132565,
+  "date_min": "2010-12-01 08:26:00",
+  "date_max": "2011-12-09 12:50:00",
+  "reconciliation": {
+    "gross_sales": 10642110.804,
+    "returns": 893979.73,
+    "net_revenue": 9748131.074000001
+  },
+  "foreign_key_violations": 0,
+  "currency": "GBP",
+  "data": "UCI Online Retail historical transactions",
+  "checks": [
+    "exact duplicate removal",
+    "positive finite unit price",
+    "nonzero integer quantity",
+    "valid invoice dimensions",
+    "foreign keys",
+    "gross minus returns equals net"
+  ],
+  "source_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d"
+}
